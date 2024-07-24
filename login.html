@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="log.js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+
+        <h3 id="login">FAZER LOGIN</h3>
+        <input type="text" placeholder="Login" id="login">
+        <input type="password" placeholder="Senha" id="senha">
+      <input type="date" name="" id="">
+        <input type="submit" onclick="logar(); return false">
+
+    </form>
+
+         
+    <script>
+
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "ARNOLD SCHWARZENEGGER" && senha == "OTORRINOLARINGOLOGISTA"){
+                alert('Sucesso');
+              location.href = "pagina1.html";
+            }else{
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+
+    </script>
+</body>
+</html>
